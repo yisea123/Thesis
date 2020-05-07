@@ -1,0 +1,150 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 192 344)
+	(text "dda" (rect 5 0 22 12)(font "Arial" ))
+	(text "inst" (rect 8 264 25 276)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "N1[9..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "N1[9..0]" (rect 21 27 61 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "N2[9..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "N2[9..0]" (rect 21 43 61 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "N3[9..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "N3[9..0]" (rect 21 59 61 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "N4[9..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "N4[9..0]" (rect 21 75 61 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "WR" (rect 0 0 18 12)(font "Arial" ))
+		(text "WR" (rect 21 139 39 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 187 35 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "pulse1" (rect 0 0 31 12)(font "Arial" ))
+		(text "pulse1" (rect 76 27 107 39)(font "Arial" ))
+		(line (pt 128 32)(pt 112 32)(line_width 1))
+	)
+	(port
+		(pt 128 48)
+		(output)
+		(text "dir1" (rect 0 0 17 12)(font "Arial" ))
+		(text "dir1" (rect 90 43 107 55)(font "Arial" ))
+		(line (pt 128 48)(pt 112 48)(line_width 1))
+	)
+	(port
+		(pt 128 72)
+		(output)
+		(text "pulse2" (rect 0 0 31 12)(font "Arial" ))
+		(text "pulse2" (rect 76 67 107 79)(font "Arial" ))
+		(line (pt 128 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 128 88)
+		(output)
+		(text "dir2" (rect 0 0 17 12)(font "Arial" ))
+		(text "dir2" (rect 90 83 107 95)(font "Arial" ))
+		(line (pt 128 88)(pt 112 88)(line_width 1))
+	)
+	(port
+		(pt 128 112)
+		(output)
+		(text "pulse3" (rect 0 0 31 12)(font "Arial" ))
+		(text "pulse3" (rect 76 107 107 119)(font "Arial" ))
+		(line (pt 128 112)(pt 112 112)(line_width 1))
+	)
+	(port
+		(pt 128 128)
+		(output)
+		(text "dir3" (rect 0 0 17 12)(font "Arial" ))
+		(text "dir3" (rect 90 123 107 135)(font "Arial" ))
+		(line (pt 128 128)(pt 112 128)(line_width 1))
+	)
+	(port
+		(pt 128 152)
+		(output)
+		(text "pulse4" (rect 0 0 31 12)(font "Arial" ))
+		(text "pulse4" (rect 76 147 107 159)(font "Arial" ))
+		(line (pt 128 152)(pt 112 152)(line_width 1))
+	)
+	(port
+		(pt 128 168)
+		(output)
+		(text "dir4" (rect 0 0 17 12)(font "Arial" ))
+		(text "dir4" (rect 90 163 107 175)(font "Arial" ))
+		(line (pt 128 168)(pt 112 168)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "busy" (rect 0 0 24 12)(font "Arial" ))
+		(text "busy" (rect 24 152 48 164)(font "Arial" ))
+		(line (pt 16 160)(pt 0 160)(line_width 1))
+	)
+	(parameter
+		"Nmax"
+		"125"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Nmax1"
+		"124"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Nmax2"
+		"250"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 112 264)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 192 8 360 64))
+)
