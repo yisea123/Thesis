@@ -1,4 +1,5 @@
 .\objects\main.o: main.c
+.\objects\main.o: UART.h
 .\objects\main.o: stm32f4xx.h
 .\objects\main.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm4.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -9,7 +10,7 @@
 .\objects\main.o: system_stm32f4xx.h
 .\objects\main.o: stm32f4xx_conf.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
-.\objects\main.o: ..\Firmware STM32F4\stm32f4xx.h
+.\objects\main.o: ..\Firmware STM32F4 - v2\stm32f4xx.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
@@ -35,8 +36,18 @@
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\main.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
+.\objects\main.o: CONTROL.h
 .\objects\main.o: system_timetick.h
-.\objects\main.o: UART.h
-.\objects\main.o: GPIO.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: define.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: FSMC.h
 .\objects\main.o: utils.h
+.\objects\main.o: CONTROL.h
+.\objects\main.o: PWM.h
+.\objects\main.o: UART.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: EEPROM_I2C.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: SRF05.h
+.\objects\main.o: GPIO.h

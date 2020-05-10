@@ -1,8 +1,11 @@
-#ifndef __EEPROM_I2C_H
-#define __EEPROM_I2C_H
+#ifndef _EEPROM_I2C_H
+#define _EEPROM_I2C_H
 
-#include <stdint.h>
+
+#include "system_timetick.h"
 #include <stdbool.h>
+#include "utils.h"
+
 
 #define I2C_TIMEOUT           100000
 ////Note: EEPROM AT24C04 address is 8 bits:|1010|A2|A1|Page|R/W|

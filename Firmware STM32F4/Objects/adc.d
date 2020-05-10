@@ -1,4 +1,6 @@
 .\objects\adc.o: ADC.c
+.\objects\adc.o: ADC.h
+.\objects\adc.o: system_timetick.h
 .\objects\adc.o: stm32f4xx.h
 .\objects\adc.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm4.h
 .\objects\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -9,7 +11,7 @@
 .\objects\adc.o: system_stm32f4xx.h
 .\objects\adc.o: stm32f4xx_conf.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
-.\objects\adc.o: ..\Firmware STM32F4\stm32f4xx.h
+.\objects\adc.o: ..\Firmware STM32F4 - v2\stm32f4xx.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
@@ -35,6 +37,3 @@
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\adc.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-.\objects\adc.o: system_timetick.h
-.\objects\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\adc.o: ADC.h

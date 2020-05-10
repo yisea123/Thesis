@@ -1,0 +1,2 @@
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\OpenTKLib.csprojAssemblyReference.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\OpenTKLib.csproj.CoreCompileInputs.cache

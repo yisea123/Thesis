@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=oDO4 Pin=U13-15
+Removed Pin From Net: NetName=oDO3 Pin=U13-16
+Removed Pin From Net: NetName=oDO2 Pin=U13-17
+Removed Pin From Net: NetName=oDO1 Pin=U13-18
+Added Pin To Net: NetName=oDO1 Pin=U13-15
+Added Pin To Net: NetName=oDO2 Pin=U13-16
+Added Pin To Net: NetName=oDO3 Pin=U13-17
+Added Pin To Net: NetName=oDO4 Pin=U13-18
+Change Net Name : Old Net Name=iDO1 New Net Name=iDO4
+Change Net Name : Old Net Name=iDO2 New Net Name=iDO3
+Change Net Name : Old Net Name=iDO3 New Net Name=iDO2
+Change Net Name : Old Net Name=iDO4 New Net Name=iDO1

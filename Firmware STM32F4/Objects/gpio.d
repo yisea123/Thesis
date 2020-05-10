@@ -1,4 +1,6 @@
 .\objects\gpio.o: GPIO.c
+.\objects\gpio.o: GPIO.h
+.\objects\gpio.o: system_timetick.h
 .\objects\gpio.o: stm32f4xx.h
 .\objects\gpio.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm4.h
 .\objects\gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -9,7 +11,7 @@
 .\objects\gpio.o: system_stm32f4xx.h
 .\objects\gpio.o: stm32f4xx_conf.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
-.\objects\gpio.o: ..\Firmware STM32F4\stm32f4xx.h
+.\objects\gpio.o: ..\Firmware STM32F4 - v2\stm32f4xx.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
@@ -35,5 +37,4 @@
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\gpio.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-.\objects\gpio.o: system_timetick.h
-.\objects\gpio.o: GPIO.h
+.\objects\gpio.o: define.h

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraIPOnvif1", "CameraIPOnvif1\CameraIPOnvif1.csproj", "{86863EB2-206A-4D43-9490-881F719A899F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTK", "SimpleScene\OpenTK.csproj", "{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug-Client|Any CPU = Debug-Client|Any CPU
+		Debug-Client|x64 = Debug-Client|x64
+		Debug-Server|Any CPU = Debug-Server|Any CPU
+		Debug-Server|x64 = Debug-Server|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug|x64.ActiveCfg = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug|x64.Build.0 = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Client|Any CPU.ActiveCfg = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Client|Any CPU.Build.0 = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Client|x64.ActiveCfg = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Client|x64.Build.0 = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Server|Any CPU.ActiveCfg = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Server|Any CPU.Build.0 = Debug|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Server|x64.ActiveCfg = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Debug-Server|x64.Build.0 = Debug|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86863EB2-206A-4D43-9490-881F719A899F}.Release|x64.ActiveCfg = Release|x64
+		{86863EB2-206A-4D43-9490-881F719A899F}.Release|x64.Build.0 = Release|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug|x64.ActiveCfg = Debug|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug|x64.Build.0 = Debug|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Client|Any CPU.ActiveCfg = Debug-Client|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Client|Any CPU.Build.0 = Debug-Client|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Client|x64.ActiveCfg = Debug-Client|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Client|x64.Build.0 = Debug-Client|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Server|Any CPU.ActiveCfg = Debug-Server|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Server|Any CPU.Build.0 = Debug-Server|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Server|x64.ActiveCfg = Debug-Server|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Debug-Server|x64.Build.0 = Debug-Server|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Release|x64.ActiveCfg = Release|x64
+		{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC28A39E-6ACB-4EC4-ACD0-3A6945D0DBF1}
+	EndGlobalSection
+EndGlobal

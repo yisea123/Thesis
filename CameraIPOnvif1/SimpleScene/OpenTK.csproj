@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A7A056C-CB90-4F29-95DE-EAC471A6CBD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SimpleScene</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SimpleScene</AssemblyName>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SimpleScene</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-Client|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug-Client</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>_SimpleScene</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug-Server</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>_SimpleScene</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Client|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug-Client\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-Server|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug-Server\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="OpenTK">
+      <HintPath>..\Libs\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="AGG">
+      <HintPath>bin\Debug\AGG.dll</HintPath>
+    </Reference>
+    <Reference Include="MatterHackers.VectorMath">
+      <HintPath>bin\Debug\MatterHackers.VectorMath.dll</HintPath>
+    </Reference>
+    <Reference Include="NCalc">
+      <HintPath>bin\Debug\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>bin\Debug\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\SSAABB.cs" />
+    <Compile Include="Objects\SSObjectGDISurface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SSObject.cs" />
+    <Compile Include="SSScene.cs" />
+    <Compile Include="Cameras\SSCamera.cs" />
+    <Compile Include="Cameras\SSCameraThirdPerson.cs" />
+    <Compile Include="Core\SSRay.cs" />
+    <Compile Include="Core\SSTexture.cs" />
+    <Compile Include="Meshes\SSAbstractMesh.cs" />
+    <Compile Include="Meshes\wfOBJ\SSMesh_wfOBJ.cs" />
+    <Compile Include="Meshes\wfOBJ\VertexSoup_VertexFormatBinder.cs" />
+    <Compile Include="Objects\SSObjectCube.cs" />
+    <Compile Include="Objects\SSObjectGDISurface_Text.cs" />
+    <Compile Include="Objects\SSObjectMesh.cs" />
+    <Compile Include="Objects\SSObjectRay.cs" />
+    <Compile Include="Objects\SSObjectTriangle.cs" />
+    <Compile Include="Util\OpenTKHelper.cs" />
+    <Compile Include="Util\RunningAverage.cs" />
+    <Compile Include="Util\ssBVH\ssBVH.cs" />
+    <Compile Include="Util\ssBVH\ssBVH_Node.cs" />
+    <Compile Include="Util\ssBVH\ssBVH_SSObject.cs" />
+    <Compile Include="Util\VertexSoup.cs" />
+    <Compile Include="Util\WhoCalls.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Util\FPSCalculator.cs" />
+    <Compile Include="Core\SSShader.cs" />
+    <Compile Include="Objects\SSObject2DSurface_AGG.cs" />
+    <Compile Include="Objects\SSObject2DSurface_AGGText.cs" />
+    <Compile Include="Util\GDIviaAGG.cs" />
+    <Compile Include="Util\IcoSphereCreator.cs" />
+    <Compile Include="Meshes\Shapes\SSMesh_SphereICO.cs" />
+    <Compile Include="Core\SSMainShaderProgram.cs" />
+    <Compile Include="Core\SSShaderProgram.cs" />
+    <Compile Include="Objects\SSObjectHUDQuad.cs" />
+    <Compile Include="Meshes\Shapes\SSMeshDisk.cs" />
+    <Compile Include="Core\SSTextureWithAlpha.cs" />
+    <Compile Include="Lights\SSSimpleShadowMap.cs" />
+    <Compile Include="Lights\SSParallelSplitShadowMap.cs" />
+    <Compile Include="Core\SSPssmShaderProgram.cs" />
+    <Compile Include="Lights\SSShadowMapBase.cs" />
+    <Compile Include="Lights\SSLightBase.cs" />
+    <Compile Include="Lights\SSDirectionalLight.cs" />
+    <Compile Include="Meshes\Buffers\SSArrayBuffer.cs" />
+    <Compile Include="Meshes\Buffers\SSIndexBuffer.cs" />
+    <Compile Include="Meshes\Buffers\SSVertexBuffer.cs" />
+    <Compile Include="Meshes\Buffers\SSAttributeBuffer.cs" />
+    <Compile Include="Util\Interpolate.cs" />
+    <Compile Include="Meshes\Buffers\AttributeFormats.cs" />
+    <Compile Include="Meshes\Buffers\VertexFormats.cs" />
+    <Compile Include="Core\SSInstanceShaderProgram.cs" />
+    <Compile Include="Meshes\SSIndexedMesh.cs" />
+    <Compile Include="Meshes\Shapes\SSTexturedQuad.cs" />
+    <Compile Include="Meshes\Shapes\SSTexturedCube.cs" />
+    <Compile Include="Util\Prefs.cs" />
+    <Compile Include="Util\Color4Helper.cs" />
+    <Compile Include="Core\SSInstancePssmShaderProgram.cs" />
+    <Compile Include="Core\SSSphere.cs" />
+    <Compile Include="Util\ssBVH\ssBVH_Sphere.cs" />
+    <Compile Include="Meshes\Shapes\SSTexturedNormalCube.cs" />
+    <Compile Include="Meshes\Shapes\SSTexturedNormalQuad.cs" />
+    <Compile Include="Meshes\SSVertexMesh.cs" />
+    <Compile Include="Core\SSTextureMaterial.cs" />
+    <Compile Include="Util\Files\SSAssetManager.cs" />
+    <Compile Include="Util\Files\WavefrontObjLoader.cs" />
+    <Compile Include="Util\Files\SSWavefrontMTLInfo.cs" />
+    <Compile Include="Util\Files\SSWavefrontParser.cs" />
+    <Compile Include="Meshes\Shapes\SSMeshBoundingSphere.cs" />
+    <Compile Include="Util\Files\SSAssetManagerRegisterDefaultTypes.cs" />
+    <Compile Include="Objects\SSObjectOcclusionQueuery.cs" />
+    <Compile Include="Util\SSFrustumCuller.cs" />
+    <Compile Include="Meshes\Instancing\ParticlesFieldGenerators.cs" />
+    <Compile Include="Meshes\Instancing\ParticlesPlaneGenerators.cs" />
+    <Compile Include="Meshes\Instancing\BodiesFieldGenerators.cs" />
+    <Compile Include="Meshes\Instancing\ParticleEmitters.cs" />
+    <Compile Include="Meshes\Instancing\ParticleEffectors.cs" />
+    <Compile Include="Meshes\Instancing\SSInstancedMeshRenderer.cs" />
+    <Compile Include="Meshes\Instancing\SSParticleSystemData.cs" />
+    <Compile Include="Meshes\Instancing\SSInstancedSpriteRenderer.cs" />
+    <Compile Include="Meshes\Instancing\SSInstancesData.cs" />
+    <Compile Include="Extra\TestBenchBootstrap\TestBenchBootstrap.cs" />
+    <Compile Include="Extra\TestBenchBootstrap\TestBenchBootstrap_renderScene.cs" />
+    <Compile Include="Extra\TestBenchBootstrap\TestBenchBootstrap_setupInput.cs" />
+    <Compile Include="Extra\TestBenchBootstrap\TestBenchBootstrap_setupScene.cs" />
+    <Compile Include="Util\LinearADSREnvelope.cs" />
+    <Compile Include="Core\SSColorMaterial.cs" />
+    <Compile Include="Core\SSInstancedCylinderShaderProgram.cs">
+      <Link>Core\Core\SSInstancedCylinderShaderProgram.cs</Link>
+    </Compile>
+    <Compile Include="Meshes\Shapes\SQuad.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Core\Core\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\obj\banhxe_truc.mtl" />
+    <None Include="Assets\obj\banhxe_truc.obj" />
+    <None Include="Assets\obj\gripper.mtl" />
+    <None Include="Assets\obj\gripper.obj" />
+    <None Include="Assets\obj\khau1.mtl" />
+    <None Include="Assets\obj\khau1.obj" />
+    <None Include="Assets\obj\khau2.mtl" />
+    <None Include="Assets\obj\khau2.obj" />
+    <None Include="Assets\obj\khau3.mtl" />
+    <None Include="Assets\obj\khau3.obj" />
+    <None Include="Assets\obj\thanxe.mtl" />
+    <None Include="Assets\obj\thanxe.obj" />
+  </ItemGroup>
+</Project>

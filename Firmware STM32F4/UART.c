@@ -1,31 +1,50 @@
-//#include "stm32f4xx.h"
-//#include "misc.h"
-#include "system_timetick.h"
 #include "UART.h"
-#include "utils.h"
-#include "string.h"
 
-//uint8_t ui8_pc_rx_buff[PC_RX_BUFF_SIZE] = {0};
 uint8_t ui8_dma_rx_buff[DMA_RX_BUFF_SIZE] = {0};
 uint8_t ui8_dma_tx_buff[DMA_TX_BUFF_SIZE] = {0};
 
-
-uint32_t len = 0;
+//uint32_t len = 0;
 int32_t temp;
 uint8_t frame[USR_TX_BUFF_SIZE] = {0};
 
+extern float f_theta1;
+extern float f_theta2;
+extern float f_theta3;
+
+extern volatile float f_front_dis;
+extern volatile float f_rear_dis;
+extern volatile float f_grip_dis;
+
+
+extern float f_left_vel_fil;
+extern float f_right_vel_fil;
+extern float f_setpoint_left_vel_fil;
+extern float f_setpoint_right_vel_fil;
+extern float f_setpoint_left_vel;
+extern float f_setpoint_right_vel;
 
 void UART_USR_Init(void)
 {
-	
 	GPIO_InitTypeDef 		GPIO_InitStructure;
 	USART_InitTypeDef 	USART_InitStructure;   
 	DMA_InitTypeDef  		DMA_InitStructure;
 	NVIC_InitTypeDef  	NVIC_InitStructure;
+	TIM_TimeBaseInitTypeDef TIM_BaseStruct;
 	
 	//Clock enable
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_DMA1, ENABLE);
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART4, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	
+	
+	TIM_BaseStruct.TIM_Prescaler = 4;
+	TIM_BaseStruct.TIM_CounterMode = TIM_CounterMode_Up;
+	TIM_BaseStruct.TIM_Period = 0xffffffff - 1;									
+	TIM_BaseStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+	TIM_BaseStruct.TIM_RepetitionCounter = 0;
+	TIM_TimeBaseInit(TIM2, &TIM_BaseStruct);
+	TIM_Cmd(TIM2, DISABLE);
+	
 	
 	//Pin PA0, PA1 config 
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
@@ -62,8 +81,7 @@ void UART_USR_Init(void)
 	
 	/* Enable UART4 DMA */
   USART_DMACmd(UART4, USART_DMAReq_Tx, ENABLE); 
-	USART_DMACmd(UART4, USART_DMAReq_Rx, ENABLE);
-	
+	USART_DMACmd(UART4, USART_DMAReq_Rx, ENABLE);	
 	
 	/* DMA1 Stream4 Channel4 for UART4 Tx configuration */			
   DMA_InitStructure.DMA_Channel = DMA_Channel_4;  
@@ -83,8 +101,7 @@ void UART_USR_Init(void)
   DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
   DMA_Init(DMA1_Stream4, &DMA_InitStructure);
   DMA_Cmd(DMA1_Stream4, ENABLE);
-	
-	
+		
 	/* DMA1 Stream2 Channel4 for USART4 Rx configuration */			
   DMA_InitStructure.DMA_Channel = DMA_Channel_4;  
   DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)&UART4->DR;
@@ -95,7 +112,7 @@ void UART_USR_Init(void)
   DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
   DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
   DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
-  DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
+  DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
   DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;
   DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;         
   DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull; //DMA_FIFOThreshold_Full;
@@ -103,8 +120,7 @@ void UART_USR_Init(void)
   DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
   DMA_Init(DMA1_Stream2, &DMA_InitStructure);
   DMA_Cmd(DMA1_Stream2, ENABLE);
-	
-	
+		
 	/* Enable DMA Interrupt to the highest priority */
   NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream2_IRQn;
   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -113,6 +129,7 @@ void UART_USR_Init(void)
   NVIC_Init(&NVIC_InitStructure);
 	
 	DMA_ITConfig(DMA1_Stream2, DMA_IT_TC, ENABLE);
+	
 }
 
 
@@ -125,32 +142,113 @@ void UART_USR_Send(uint8_t *ui8_data, uint32_t ui32_data_cnt)
 	DMA_Cmd(DMA1_Stream4, ENABLE);
 }
 
-void UART_USR_Send_ENC_Counter(void)
+void UART_USR_Send_Vel(float time)//second
 {
-	len = 0;
-	temp = 0;
-	frame[len++] = 'c';
-	//temp = ;
-	IntToStr_len(temp, &frame[len], 8);
-	len += 8;
-	frame[len++] = '\r';
-	frame[len++] = '\n';
-	UART_USR_Send((uint8_t*)frame, len);	
+	uint8_t str[3] = "vel";	
+	memcpy(&frame[0], str, 3);
+	IntToStr_len((int32_t)(f_left_vel_fil*10), &frame[3], 5);
+	IntToStr_len((int32_t)(f_right_vel_fil*10), &frame[8], 5);
+//	IntToStr_len((int32_t)(f_setpoint_left_vel_fil*10), &frame[13], 5);
+//	IntToStr_len((int32_t)(f_setpoint_right_vel_fil*10), &frame[18], 5);
+//	IntToStr_len((int32_t)(f_setpoint_left_vel*10), &frame[23], 5);
+//	IntToStr_len((int32_t)(f_setpoint_right_vel*10), &frame[28], 5);
+	IntToStr_len((int32_t)(time*1000), &frame[13], 7);
+	float temp = 0.0f;
+	uint8_t str2[3] = "arm";
+	memcpy(&frame[20], str2, 3);
+	IntToStr_len((int32_t)(f_theta1*100), &frame[23], 6);
+	IntToStr_len((int32_t)(f_theta2*100), &frame[29], 6);
+	IntToStr_len((int32_t)(f_theta3*100), &frame[35], 6);
+	temp = 15.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[41], 6);
+	temp = -15.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) - 20.0f;
+	IntToStr_len((int32_t)(temp*100), &frame[47], 6);
+	temp = 15.5f*sinf(f_theta2*-PI/180.0f) + 8.0f;
+	IntToStr_len((int32_t)(temp*100), &frame[53], 6);
+	temp = 15.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) 
+				+11.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				-11.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*sinf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[59], 6);
+	temp = -15.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) - 20.0f
+				-11.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				+11.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*sinf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[65], 6);
+	temp = 15.5f*sinf(f_theta2*-PI/180.0f) + 8.0f
+			  +11.5f*sinf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				+11.5f*cosf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[71], 6);
+	frame[77]='\r';
+	frame[78]='\n';
+	UART_USR_Send((uint8_t*)frame, 79);
+	
 }
 
+void UART_USR_Send_Arm_Para(void)
+{
+	float temp = 0.0f;
+	uint8_t str[3] = "arm";
+	memcpy(&frame[0], str, 3);
+	IntToStr_len((int32_t)(f_theta1*100), &frame[3], 6);
+	IntToStr_len((int32_t)(f_theta2*100), &frame[9], 6);
+	IntToStr_len((int32_t)(f_theta3*100), &frame[15], 6);
+	temp = 15.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[21], 6);
+	temp = -15.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) - 20.0f;
+	IntToStr_len((int32_t)(temp*100), &frame[27], 6);
+	temp = 15.5f*sinf(f_theta2*-PI/180.0f) + 8.0f;
+	IntToStr_len((int32_t)(temp*100), &frame[33], 6);
+	temp = 15.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) 
+				+11.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				-11.5f*cosf((- f_theta1 + 20)*-PI/180.0f)*sinf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[39], 6);
+	temp = -15.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f) - 20.0f
+				-11.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*cosf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				+11.5f*sinf((- f_theta1 + 20)*-PI/180.0f)*sinf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[45], 6);
+	temp = 15.5f*sinf(f_theta2*-PI/180.0f) + 8.0f
+			  +11.5f*sinf(f_theta2*-PI/180.0f)*cosf(f_theta3*-PI/180.0f)
+				+11.5f*cosf(f_theta2*-PI/180.0f)*sinf(f_theta3*-PI/180.0f);
+	IntToStr_len((int32_t)(temp*100), &frame[51], 6);
+	frame[58]='\r';
+	frame[59]='\n';
+	UART_USR_Send((uint8_t*)frame, 60);
+}
 
+void UART_USR_Send_ACK(bool IsStart)
+{
+//	uint8_t str1[11] = "ACK Start\r\n";
+//	uint8_t str2[10] = "ACK Stop\r\n";
+//	if(IsStart == true)
+//	{
+//		UART_USR_Send((uint8_t*)str1, 11);
+//	}
+//	else
+//	{
+//		UART_USR_Send((uint8_t*)str2, 10);
+//	}
+}
 
+void UART_USR_Send_SRF05_Distance(void)
+{
+	write_SRF05_trigger(GRIPPER_SRF05);
+	uint8_t str[3] = "dis";
+	memcpy(&frame[0], str, 3);
+	IntToStr_len((int32_t)(f_grip_dis*10), &frame[3], 6);
+	frame[10]='\r';
+	frame[11]='\n';
+	UART_USR_Send((uint8_t*)frame, 12);
+	
+}
 
 void DMA1_Stream2_IRQHandler(void)
-{
-  
+{	
   /* Clear the DMA1_Stream2 TCIF2 pending bit */
   DMA_ClearITPendingBit(DMA1_Stream2, DMA_IT_TCIF2);
- 		
-	//PC_RX_DMA_STREAM->NDTR = DMA_RX_BUFF_SIZE;
+	TIM_Cmd(TIM2, DISABLE);
+	TIM_SetCounter(TIM2, 0);
+	TIM_Cmd(TIM2, ENABLE);
 	DMA_Cmd(DMA1_Stream2, ENABLE);
 }	
-
 
 
 

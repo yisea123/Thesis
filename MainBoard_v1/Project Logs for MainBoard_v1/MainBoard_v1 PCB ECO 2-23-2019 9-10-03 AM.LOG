@@ -1,0 +1,7 @@
+Added Component: Designator=U14(USR-TCP232E)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=5V Pin=U14-1
+Added Pin To Net: NetName=GND Pin=U14-3
+Added Pin To Net: NetName=PA1 Pin=U14-5
+Added Pin To Net: NetName=PA0 Pin=U14-6
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U14 USR-TCP232E

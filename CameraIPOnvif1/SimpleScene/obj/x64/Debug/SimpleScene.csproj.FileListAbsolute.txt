@@ -1,0 +1,15 @@
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\SimpleScene.csprojAssemblyReference.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\SimpleScene.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\SimpleScene.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\SimpleScene.pdb
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\AGG.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\Antlr3.Runtime.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\MatterHackers.VectorMath.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\NCalc.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\OpenTK.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\OpenTK.pdb
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\OpenTK.xml
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\bin\x64\Debug\OpenTK.dll.config
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\SimpleScene.csproj.CopyComplete
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\SimpleScene.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\x64\Debug\SimpleScene.pdb

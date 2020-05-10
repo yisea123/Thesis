@@ -1,6 +1,7 @@
-#ifndef __ADC_H
-#define __ADC_H
+#ifndef _ADC_H
+#define _ADC_H
 
-
+#include "system_timetick.h"
 
 #endif
+

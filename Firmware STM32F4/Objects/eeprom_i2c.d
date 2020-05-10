@@ -1,4 +1,6 @@
 .\objects\eeprom_i2c.o: EEPROM_I2C.c
+.\objects\eeprom_i2c.o: EEPROM_I2C.h
+.\objects\eeprom_i2c.o: system_timetick.h
 .\objects\eeprom_i2c.o: stm32f4xx.h
 .\objects\eeprom_i2c.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm4.h
 .\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -9,7 +11,7 @@
 .\objects\eeprom_i2c.o: system_stm32f4xx.h
 .\objects\eeprom_i2c.o: stm32f4xx_conf.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
-.\objects\eeprom_i2c.o: ..\Firmware STM32F4\stm32f4xx.h
+.\objects\eeprom_i2c.o: ..\Firmware STM32F4 - v2\stm32f4xx.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h
@@ -35,8 +37,17 @@
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 .\objects\eeprom_i2c.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
-.\objects\eeprom_i2c.o: system_timetick.h
-.\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\eeprom_i2c.o: EEPROM_I2C.h
 .\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\eeprom_i2c.o: utils.h
+.\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\eeprom_i2c.o: define.h
+.\objects\eeprom_i2c.o: CONTROL.h
+.\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\eeprom_i2c.o: FSMC.h
+.\objects\eeprom_i2c.o: utils.h
+.\objects\eeprom_i2c.o: PWM.h
+.\objects\eeprom_i2c.o: UART.h
+.\objects\eeprom_i2c.o: CONTROL.h
+.\objects\eeprom_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\eeprom_i2c.o: SRF05.h
+.\objects\eeprom_i2c.o: EEPROM_I2C.h

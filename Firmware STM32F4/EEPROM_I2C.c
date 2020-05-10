@@ -1,8 +1,4 @@
-#include "stm32f4xx.h"
-#include "system_timetick.h"
-#include "string.h"
 #include "EEPROM_I2C.h"
-#include "utils.h"
 
 /*******************************************************************************
  * @fn     I2C_ReadBytes     
@@ -208,14 +204,15 @@ void EEP_Init(void)
 	I2C_InitTypeDef  I2C_InitStructure;
 
 	/* GPIO configuration */
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9; //SCL, SDA
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7; //SCL, SDA
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;		//note
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_I2C1);    
-	GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_I2C1);  
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource6, GPIO_AF_I2C1);    
+	GPIO_PinAFConfig(GPIOB, GPIO_PinSource7, GPIO_AF_I2C1);  
 
 	/* I2C configuration */
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C1, ENABLE);

@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=oPUL4 Pin=U4-4
+Removed Pin From Net: NetName=oPUL6 Pin=U4-11
+Removed Pin From Net: NetName=oDIR6 Pin=U4-12
+Removed Pin From Net: NetName=oDO3 Pin=U4-13
+Removed Pin From Net: NetName=oPUL1 Pin=U4-16
+Removed Pin From Net: NetName=oPUL2 Pin=U4-17
+Removed Pin From Net: NetName=oPUL3 Pin=U4-18
+Removed Pin From Net: NetName=oDIR3 Pin=U4-27
+Removed Pin From Net: NetName=oDIR2 Pin=U4-28
+Removed Pin From Net: NetName=oDIR1 Pin=U4-29
+Removed Pin From Net: NetName=oDIR4 Pin=U4-32
+Removed Pin From Net: NetName=oDO2 Pin=U4-33
+Removed Pin From Net: NetName=oDIR5 Pin=U4-34
+Removed Pin From Net: NetName=oPUL5 Pin=U4-35
+Removed Pin From Net: NetName=oDO1 Pin=U4-47
+Removed Pin From Net: NetName=oDO4 Pin=U4-80
+Added Pin To Net: NetName=iPUL4 Pin=U4-4
+Added Pin To Net: NetName=iPUL6 Pin=U4-11
+Added Pin To Net: NetName=iDIR6 Pin=U4-12
+Added Pin To Net: NetName=iDO3 Pin=U4-13
+Added Pin To Net: NetName=iPUL1 Pin=U4-16
+Added Pin To Net: NetName=iPUL2 Pin=U4-17
+Added Pin To Net: NetName=iPUL3 Pin=U4-18
+Added Pin To Net: NetName=iDIR3 Pin=U4-27
+Added Pin To Net: NetName=iDIR2 Pin=U4-28
+Added Pin To Net: NetName=iDIR1 Pin=U4-29
+Added Pin To Net: NetName=iDIR4 Pin=U4-32
+Added Pin To Net: NetName=iDO2 Pin=U4-33
+Added Pin To Net: NetName=iDIR5 Pin=U4-34
+Added Pin To Net: NetName=iPUL5 Pin=U4-35
+Added Pin To Net: NetName=iDO1 Pin=U4-47
+Added Pin To Net: NetName=iDO4 Pin=U4-80
+Added Member To Class: ClassName=MainBoard_v1 Member=Component H21 DO
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U4 STM_CPLD_Board
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U11 74LCV4245
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U13 74HCT245

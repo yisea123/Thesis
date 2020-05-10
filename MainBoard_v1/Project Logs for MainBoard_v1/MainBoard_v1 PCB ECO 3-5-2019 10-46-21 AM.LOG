@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=ADC12_IN4 Pin=HW24-3
+Added Pin To Net: NetName=ADC12_IN4 Pin=U4-36
+Added Net: Name=ADC12_IN4

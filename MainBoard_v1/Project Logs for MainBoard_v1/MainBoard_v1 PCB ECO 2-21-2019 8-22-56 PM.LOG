@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=VCC Pin=C52-1
+Removed Pin From Net: NetName=VCC Pin=C53-1
+Removed Pin From Net: NetName=VCC Pin=C54-1
+Removed Pin From Net: NetName=VCC Pin=C55-1
+Removed Pin From Net: NetName=VCC Pin=C56-1
+Removed Pin From Net: NetName=VCC Pin=C57-1
+Removed Pin From Net: NetName=VCC Pin=C63-1
+Removed Pin From Net: NetName=VCC Pin=H21-6
+Removed Pin From Net: NetName=VCC Pin=HW16-4
+Removed Pin From Net: NetName=VCC Pin=HW17-4
+Removed Pin From Net: NetName=VCC Pin=HW18-4
+Removed Pin From Net: NetName=VCC Pin=HW19-4
+Removed Pin From Net: NetName=VCC Pin=HW20-4
+Removed Pin From Net: NetName=VCC Pin=HW21-4
+Added Pin To Net: NetName=5V Pin=C52-1
+Added Pin To Net: NetName=5V Pin=C53-1
+Added Pin To Net: NetName=5V Pin=C54-1
+Added Pin To Net: NetName=5V Pin=C55-1
+Added Pin To Net: NetName=5V Pin=C56-1
+Added Pin To Net: NetName=5V Pin=C57-1
+Added Pin To Net: NetName=5V Pin=C63-1
+Added Pin To Net: NetName=5V Pin=H21-6
+Added Pin To Net: NetName=5V Pin=HW16-4
+Added Pin To Net: NetName=5V Pin=HW17-4
+Added Pin To Net: NetName=5V Pin=HW18-4
+Added Pin To Net: NetName=5V Pin=HW19-4
+Added Pin To Net: NetName=5V Pin=HW20-4
+Added Pin To Net: NetName=5V Pin=HW21-4
+Added Member To Class: ClassName=MainBoard_v1 Member=Component D3 LED
+Added Member To Class: ClassName=MainBoard_v1 Member=Component HW21 M6

@@ -1,0 +1,2 @@
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\Release\SimpleScene.csprojAssemblyReference.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\SimpleScene\obj\Release\SimpleScene.csproj.CoreCompileInputs.cache

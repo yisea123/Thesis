@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=C14 Old Footprint=Cap_Alu_G New Footprint=Cap_Alu_D8
+Added Member To Class: ClassName=MainBoard_v1 Member=Component D3 LED

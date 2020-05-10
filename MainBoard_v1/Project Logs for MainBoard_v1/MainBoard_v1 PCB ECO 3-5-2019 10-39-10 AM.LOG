@@ -1,0 +1,13 @@
+Add component (AddParameter): Name = "Value"; Value = "Header white 4"; VariantName = "[No Variations]"
+Added Component: Designator=HW24(Header White 4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "Header white 4"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=HW24-1
+Added Pin To Net: NetName=5V Pin=HW24-4
+Added Pin To Net: NetName=ADC123_IN11 Pin=HW24-3
+Added Pin To Net: NetName=ADC123_IN11 Pin=U4-52
+Added Net: Name=ADC123_IN11
+Added Pin To Net: NetName=ADC123_IN13 Pin=HW24-2
+Added Pin To Net: NetName=ADC123_IN13 Pin=U4-39
+Added Net: Name=ADC123_IN13
+Added Member To Class: ClassName=MainBoard_v1 Member=Component HW24 ADC

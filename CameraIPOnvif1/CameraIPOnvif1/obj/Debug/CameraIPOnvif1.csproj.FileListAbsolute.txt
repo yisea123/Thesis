@@ -1,0 +1,54 @@
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe.config
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.pdb
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OzekiSDK.dll
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csprojAssemblyReference.cache
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Form1.resources
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Properties.Resources.resources
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.GenerateResource.cache
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.CoreCompileInputs.cache
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.CopyComplete
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.exe
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.pdb
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.dll
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.pdb
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.xml
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe.config
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.pdb
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OzekiSDK.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.pdb
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.xml
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csprojAssemblyReference.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Form1.resources
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Properties.Resources.resources
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.GenerateResource.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.CopyComplete
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.exe
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.pdb
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.SettingUART.resources
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.dll.config
+D:\Bai Giang\2018-2\Test Code C#\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.SettingUART.resources
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\SimpleScene.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\AGG.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\MatterHackers.VectorMath.dll
+C:\Users\Nguyen Trong Phuc\Desktop\Folder\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\SimpleScene.pdb
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe.config
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.exe
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\CameraIPOnvif1.pdb
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.dll
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\SimpleScene.dll
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\AGG.dll
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\MatterHackers.VectorMath.dll
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.pdb
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\OpenTK.xml
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\bin\Debug\SimpleScene.pdb
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csprojResolveAssemblyReference.cache
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Form1.resources
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.Properties.Resources.resources
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.SettingUART.resources
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.csproj.GenerateResource.Cache
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.exe
+D:\Thesis\GUI\CameraIPOnvif1w\CameraIPOnvif1\CameraIPOnvif1\obj\Debug\CameraIPOnvif1.pdb

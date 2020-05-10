@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=iPUL1 Pin=U4-16
+Removed Pin From Net: NetName=iPUL3 Pin=U4-18
+Removed Pin From Net: NetName=iDIR3 Pin=U4-27
+Removed Pin From Net: NetName=iDIR1 Pin=U4-29
+Added Pin To Net: NetName=iPUL3 Pin=U4-16
+Added Pin To Net: NetName=iPUL1 Pin=U4-18
+Added Pin To Net: NetName=iDIR1 Pin=U4-27
+Added Pin To Net: NetName=iDIR3 Pin=U4-29
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U4 STM_CPLD_Board
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U11 74LCV4245
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U13 74HCT245

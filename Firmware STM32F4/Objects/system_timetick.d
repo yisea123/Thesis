@@ -10,7 +10,7 @@
 .\objects\system_timetick.o: system_stm32f4xx.h
 .\objects\system_timetick.o: stm32f4xx_conf.h
 .\objects\system_timetick.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
-.\objects\system_timetick.o: ..\Firmware STM32F4\stm32f4xx.h
+.\objects\system_timetick.o: ..\Firmware STM32F4 - v2\stm32f4xx.h
 .\objects\system_timetick.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h
 .\objects\system_timetick.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h
 .\objects\system_timetick.o: .\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h

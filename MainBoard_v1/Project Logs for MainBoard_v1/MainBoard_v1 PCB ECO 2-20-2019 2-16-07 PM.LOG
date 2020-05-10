@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=5V Pin=C46-1
+Removed Pin From Net: NetName=5V Pin=HJ1-1
+Removed Pin From Net: NetName=GND Pin=HJ1-3
+Removed Pin From Net: NetName=PA1 Pin=HJ1-5
+Removed Pin From Net: NetName=PA0 Pin=HJ1-6
+Removed Member From Class: ClassName=MainBoard_v1 Member=HJ1
+Removed Member From Class: ClassName=MainBoard_v1 Member=HJ2
+Removed Member From Class: ClassName=MainBoard_v1 Member=HJ3
+Added Component: Designator=U14(USR-TCP232E)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=C46-1
+Added Pin To Net: NetName=VCC Pin=U14-1
+Added Pin To Net: NetName=GND Pin=U14-3
+Added Pin To Net: NetName=PA1 Pin=U14-5
+Added Pin To Net: NetName=PA0 Pin=U14-6
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U14 USR-TCP232E

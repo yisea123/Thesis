@@ -45,18 +45,11 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
-		(pt 80 96)
-		(input)
-		(text "aclr" (rect 0 0 14 21)(font "Arial" (font_size 8))(vertical))
-		(text "aclr" (rect 73 59 86 76)(font "Arial" (font_size 8))(vertical))
-		(line (pt 80 96)(pt 80 80)(line_width 1))
-	)
-	(port
-		(pt 144 40)
+		(pt 144 56)
 		(output)
 		(text "q[15..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "q[15..0]" (rect 89 34 125 47)(font "Arial" (font_size 8)))
-		(line (pt 144 40)(pt 128 40)(line_width 3))
+		(text "q[15..0]" (rect 89 50 125 63)(font "Arial" (font_size 8)))
+		(line (pt 144 56)(pt 128 56)(line_width 3))
 	)
 	(drawing
 		(text "up/down" (rect 94 17 128 29)(font "Arial" ))

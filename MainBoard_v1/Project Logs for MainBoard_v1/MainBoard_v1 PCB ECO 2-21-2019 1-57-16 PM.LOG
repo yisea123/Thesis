@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=C14 Old Footprint=CAP_ALU_D8 New Footprint=Cap_Alu_G
+Change Component Comment : Designator=D3-24V Old Comment=LED  New Comment=LED
+Change Component Comment : Designator=U1 Old Comment=LM2596-12V New Comment=LM2596 - 12V
+Change Component Designator: OldDesignator=D3-24V NewDesignator=D3
+Change Component Designator: OldDesignator=D4-12V NewDesignator=D4
+Change Component Designator: OldDesignator=D9-ADJV NewDesignator=D9
+Added Component: Designator=Dr1(Drill 3mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Dr2(Drill 3mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Dr3(Drill 3mm)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Dr4(Drill 3mm)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=MainBoard_v1 Member=Component Dr1 Drill
+Added Member To Class: ClassName=MainBoard_v1 Member=Component Dr2 Drill
+Added Member To Class: ClassName=MainBoard_v1 Member=Component Dr3 Drill
+Added Member To Class: ClassName=MainBoard_v1 Member=Component Dr4 Drill

@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=iDO4 Pin=R32-1
+Removed Pin From Net: NetName=iDO3 Pin=R33-1
+Removed Pin From Net: NetName=iDO2 Pin=R34-1
+Removed Pin From Net: NetName=iDO1 Pin=R35-1
+Removed Pin From Net: NetName=iDO4 Pin=U13-2
+Removed Pin From Net: NetName=iDO3 Pin=U13-3
+Removed Pin From Net: NetName=iDO2 Pin=U13-4
+Removed Pin From Net: NetName=iDO1 Pin=U13-5
+Removed Pin From Net: NetName=oDO1 Pin=U13-15
+Removed Pin From Net: NetName=oDO2 Pin=U13-16
+Removed Pin From Net: NetName=oDO3 Pin=U13-17
+Removed Pin From Net: NetName=oDO4 Pin=U13-18
+Added Pin To Net: NetName=iDO1 Pin=R32-1
+Added Pin To Net: NetName=iDO2 Pin=R33-1
+Added Pin To Net: NetName=iDO3 Pin=R34-1
+Added Pin To Net: NetName=iDO4 Pin=R35-1
+Added Pin To Net: NetName=iDO1 Pin=U13-2
+Added Pin To Net: NetName=iDO2 Pin=U13-3
+Added Pin To Net: NetName=iDO3 Pin=U13-4
+Added Pin To Net: NetName=iDO4 Pin=U13-5
+Added Pin To Net: NetName=oDO4 Pin=U13-15
+Added Pin To Net: NetName=oDO3 Pin=U13-16
+Added Pin To Net: NetName=oDO2 Pin=U13-17
+Added Pin To Net: NetName=oDO1 Pin=U13-18
+Added Member To Class: ClassName=MainBoard_v1 Member=Component U13 74HCT245
